@@ -1,0 +1,3 @@
+preload = ["./deepkit-bun.ts"]
+[test]
+preload = ["./deepkit-bun.ts"]
