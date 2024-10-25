@@ -42,7 +42,7 @@ it("should throw when properties missing", () => {
 
 // this one isn't throwing either
 // //however, if we don't use the wrapper, it throws as expected
-it("should throw", () => {
+it("should throw when number is string when 'loosely' is false", () => {
 	const json = `{"enum": "A", "id": "1", "age": "23"}`;
 	const data: unknown = JSON.parse(json);
 	expect(() => {
