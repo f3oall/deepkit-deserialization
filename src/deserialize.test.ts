@@ -27,7 +27,8 @@ it("should throw with wrapper", () => {
 	expect(() => deserialize<ExampleData>(json)).toThrow();
 });
 
-// however, if we don't use the wrapper, it throws as expected
+// this one isn't throwing either
+// //however, if we don't use the wrapper, it throws as expected
 it("should throw", () => {
 	const json = `{"id": "1"}`;
 	const data = JSON.parse(json);
