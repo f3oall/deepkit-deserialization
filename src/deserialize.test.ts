@@ -30,7 +30,8 @@ it("should throw with wrapper", () => {
 // however, if we don't use the wrapper, it throws as expected
 it("should throw", () => {
 	const json = `{"id": "1"}`;
-	expect(() => deepkitDeserialize<ExampleData>(json)).toThrow();
+	const data = JSON.parse(json);
+	expect(() => deepkitDeserialize<ExampleData>(data)).toThrow();
 });
 
 // also, this one throws as expected, so it might have something to do with property optionality guards?
